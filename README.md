@@ -1,2 +1,2 @@
 # general-codes
-My practices and expremints with all progamming :)
+My practices and experiments with all programming :)

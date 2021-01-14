@@ -1,0 +1,6 @@
+## --- IDE releated
+.idea
+.vscode
+
+## --- Front-end related
+node_modules
