@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pig Game</title>
+
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <div class="player-area player-1">
+            <div class="player-info">
+                <h2 class="active">Player 1</h2>
+                <span>0</span>
+            </div>
+            <div class="round-info">
+                <div>Current</div>
+                <span>0</span>
+            </div>
+        </div>
+        <div class="player-area player-2">
+            <div class="player-info">
+                <h2>Player 2</h2>
+                <span>0</span>
+            </div>
+            <div class="round-info">
+                <div>Current</div>
+                <span>0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta-area">
+        <div class="btn new-btn">Restart</div>
+        <img class="dice" src="./images/dice-1.png" alt="dice" />
+        <div class="btn roll-dice-btn">Roll</div>
+        <div class="btn hold-btn">Hold</div>
+    </div>
+
+    <script src="./brain.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #191919;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    font-family: sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+}
+
+.player-area {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    color: snow;
+}
+
+.player-area .player-info, .player-area .round-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-area .player-info h2 {
+    font-size: 3em;
+}
+.player-area .player-info span {
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: lightblue;
+}
+.player-area .player-info .active {
+    border-bottom: 5px solid lightcoral;
+}
+
+.round-info {
+    padding: 20px;
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
+.round-info span {
+    font-size: 1.5em;
+    color: darkslateblue;
+}
+
+.round-info span:nth-child(2) {
+    font-size: 1.9em;
+    color: darkslateblue;
+}
+
+.cta-area {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 50vw;
+    top: 15%;
+    position: absolute;
+    left: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn {
+    padding: 5px 10px;
+    background-color: blue;
+    border-radius: 5px;
+    border: 2px solid #FFF;
+    color: snow;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0000ff91;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.dice {
+    width: 150px;
+    border-radius: 25px;
+}
+
+/*
+Tablets and below screen
+*/
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .player-area {
+        width: 100%;
+        height: 50%;
+
+        flex-direction: row;
+    }
+
+    .cta-area {
+        flex-direction: row;
+        width: 100%;
+        left: 0;
+        justify-content: space-around;
+    }
+
+    .dice {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .btn {
+        padding: 3px 8px;
+        font-size: 1.2em;
+    }
+}
