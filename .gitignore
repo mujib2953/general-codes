@@ -4,3 +4,6 @@
 
 ## --- Front-end related
 node_modules
+
+## --- Java related
+*.class
